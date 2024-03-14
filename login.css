@@ -4,9 +4,16 @@
     /* background-color:red; */
     box-sizing: border-box;
 }
-.login-container{
+body{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.login-container{
+    flex: 1;
+    /* height: 100%;
+    width: 100%; */
     display: flex;
     background:linear-gradient(#FF97B7,#FF5D8F);
     justify-content: center;
@@ -48,6 +55,7 @@
     font-weight: bold;
     color: white;
     margin: 8%;
+    cursor: pointer;
 }
 .input-container label{
     margin: 2%;
