@@ -1,5 +1,5 @@
 const express = require("express");
-const { messageHandler } = require("../controllers/controller");
+const { messageHandler, smsHandler, communityHandler } = require("../controllers/controller");
 const router = express.Router();
 
 router.get("/",(req,res)=>{
@@ -7,5 +7,9 @@ router.get("/",(req,res)=>{
 })
 
 router.post("/message",messageHandler);
+
+router.post("/message-sos",smsHandler);
+
+router.get("/community",communityHandler);
 
 module.exports = router;
